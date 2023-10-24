@@ -7,6 +7,7 @@ import Transaction.InputData;
 
 public class Mainclass {
 	public static void main(String[] args) throws NumberFormatException, IOException {
+//		Redirecting to welcome method for further execution
 		Mainclass.welcome();
 	}
 	
@@ -15,8 +16,10 @@ public class Mainclass {
 		//options
 		System.out.println("Hello to this Banking application!!!");
 		
+//		using flag Statement to Break out of the while loop
 		boolean flag = true;
 		while(flag) {
+//			Here we have provided few options to the user to choose related to transaction management
 			System.out.println("Select any (out of below 4 options) : ");
 			System.out.println("1. Create an account");
 			System.out.println("2. Deposite a amount");
@@ -29,6 +32,7 @@ public class Mainclass {
 			int option = Integer.parseInt(br.readLine());
 			
 			if(option != 6)
+//				Redirecting the user to desired input section
 				InputData.input(option);
 			else flag = false;
 		}

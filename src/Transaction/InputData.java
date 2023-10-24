@@ -70,7 +70,7 @@ public class InputData {
 			// taking input of relevant data 
 			double amount = Double.parseDouble(br.readLine());
 			
-			
+			Transaction.transfer(accNmbr1, accNmbr2, amount);
 		}
 	}
 }
